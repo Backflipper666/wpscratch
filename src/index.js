@@ -1,3 +1,4 @@
+import * as $ from "jquery";
 import "./styles/styles.css";
 import Swiper from "swiper";
 
@@ -24,3 +25,5 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+$("h1").addClass("myClass yourClass");

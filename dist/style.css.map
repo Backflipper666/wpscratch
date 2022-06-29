@@ -1,1 +1,1 @@
-{"version":3,"file":"style.css","mappings":";;;AAAA;IACI,SAAS;AACb,C","sources":["webpack://wpscratch/./src/styles/styles.css"],"sourcesContent":["h1{\n    color:red;\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"style.css","mappings":";;;AAAA;IACI,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,aAAa;EACf","sources":["webpack://wpscratch/./src/styles/styles.css"],"sourcesContent":["h1{\n    color:red;\n}\n\n.swiper {\n    width: 600px;\n    height: 300px;\n  }\n  "],"names":[],"sourceRoot":""}
