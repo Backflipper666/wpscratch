@@ -1,0 +1,16 @@
+.wrapper{
+    background-color: rgb(37, 29, 29);
+}
+.btn__expand{
+    transform: rotate(180deg);
+}
+
+.swiper{
+    display: none;
+    visibility: hidden;
+}
+.labels__lenovo2, .labels__samsung2, .labels__apple2{
+   display: none;
+   visibility: hidden;
+   
+}
