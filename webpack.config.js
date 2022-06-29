@@ -101,7 +101,19 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "src/img"),
-          to: path.resolve(__dirname, "img"),
+          to: path.resolve(__dirname, "dist/img"),
+        },
+        {
+          from: path.resolve(__dirname, "src/desktop.css"),
+          to: path.resolve(__dirname, "dist"),
+        },
+        {
+          from: path.resolve(__dirname, "src/tablets.css"),
+          to: path.resolve(__dirname, "dist"),
+        },
+        {
+          from: path.resolve(__dirname, "src/mobile.css"),
+          to: path.resolve(__dirname, "dist"),
         },
       ],
     }),

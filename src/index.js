@@ -26,4 +26,4 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-$("h1").addClass("myClass yourClass");
+//$(".logo").addClass("myClass yourClass");

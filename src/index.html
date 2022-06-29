@@ -1,35 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WP Scratch</title>
+    <title>Responsive design</title>
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="./tablets.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="./desktop.css">
+   <!--  <link rel="stylesheet" href="scss/style1.3.css">
+    <link rel="stylesheet" href="scss/style1.5.css">
+    <link rel="stylesheet" href="scss/style1.4.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+   
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/index.js" defer></script> -->
+    
 </head>
 <body>
-    <h1>header-meader</h1>
 
+ <!--    1.4 start-->
+ <div class="wrapper1-4">
+        <div class="upperMenu1-4">
+            <div class="upperMenu1-4__wrapper">
+                <div class="upperMenu1-4__containerLeft">
+                    <span class="upperMenu1-4__burgerIcon"><img class="upperMenu1-4__burger" src="img/close.svg" alt="burger icon"></span>
+        
+                    <span class="upperMenu1-4__groupIcon"><img  class="upperMenu1-4__group" src="img/Group.svg" alt="Group icon"></span>
+                </div>
+                <div class="upperMenu1-4__containerRight">
+                    <span class="upperMenu1-4__callIcon"><img  class="upperMenu1-4__call" src="img/search.svg" alt="search icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            
+                <div class="about1-4">
+                    <div class="about1-4__wrapper">
+                        <img src="img/highlight.svg" alt="" class="about1-4__highlight">
+                        <h4 class="about1-4__title">Ремонт техники</h4>
+                    </div>
+                </div>
+                <div class="links">
+                    <p class="links__services">Услуги и сервисы</p>
+                    <p class="links__services">Корпоративным клиентам</p>
+                    <p class="links__services">Продавцам техники</p>
+                    <p class="links__services">Партнерам</p>
+                    <p class="links__services">Производителям</p>
+                    <p class="links__services">Наши сервисные центры</p>
+                    <p class="links__services">Контакты</p>
+                </div>
+            
+            <footer class="footer1-4">
+                <div class="bottom-menu">
+                    <div class="bottom-menu__wrapper">
+                        <div class="bottom-menu__containerLeft">
+                            <span class="bottom-menu__burgerIcon"><img class="bottom-menu__call" src="img/call.svg" alt="call icon"></span>
+                            <span class="bottom-menu__groupIcon"><img  class="bottom-menu_chat" src="img/chat.svg" alt="chat icon"></span>
+                            <span class="bottom-menu__groupIcon"><img  class="bottom-menu__profile" src="img/profile.svg" alt="profile icon"></span>
+                        </div>
+            
+                    </div>
+                    <div class="bottom-menu__mail">mail@cps.com</div>
+                    <div class="bottom-menu__phone">8 800 890 89 00</div>
+                    <div class="bottom-menu__languages">
+                        <p class="bottom-menu__ru">RU</p>
+                        <p class="bottom-menu__en">EN</p>
+                        <p class="bottom-menu__ch">CH</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
-    <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-  
+
+    <!--  1.4 end -->
+    
+        <div class="upperMenu">
+            <div class="upperMenu__wrapper">
+                <div class="upperMenu__containerLeft">
+                    <span class="upperMenu__burgerIcon"><img class="upperMenu__burger" src="img/burger.svg" alt="burger icon"></span>
+                    <span class="upperMenu__dividerIcon"><img class="upperMenu__dividerFirst upperMenu__divider"  src="img/divider.svg" alt="divider icon"></span>
+                    <span class="upperMenu__groupIcon"><img  class="upperMenu__group" src="img/Group.svg" alt="Group icon"></span>
+                </div>
+                <div class="upperMenu__containerRight">
+                    <span class="upperMenu__callIcon"><img  class="upperMenu__call" src="img/call.svg" alt="call icon"></span>
+                    <span class="upperMenu__chatIcon"><img  class="upperMenu__chat" src="img/chat.svg" alt="chat icon"></span>
+                    <span class="upperMenu__profileIcon"><img  class="upperMenu__profile" src="img/profile.svg" alt="profile icon"></span>
+                    <span class="upperMenu__dividerIcon"><img class="upperMenu__divider"  src="img/divider.svg" alt="divider icon"></span>
+                    <span class="repairIcon"><img class="upperMenu__repair"  src="img/repair.svg" alt="repair icon"></span>
+                    <span class="upperMenu__checkIcon"><img class="upperMenu__check"  src="img/checkstatus.svg" alt="checkstatus icon"></span>
+                </div>
+            </div>
+        </div>
+
+    <main>
+        <div class="about">
+            <div class="about__wrapper">
+                <img src="highlight.svg" alt="" class="about__highlight">
+                <h1 class="about__title">Услуги и сервисы</h1>
+            </div>
+        </div>
+        <div class="services">
+            <div class="services__wrapper">
+                <button class="services__repairees">Ремонтируемые устройства</button>
+                <button class="services__additionals">До<span class="services__letterp">п</span><span class="services__lettero">о</span>лнительные услуги</button>
+                <button class="services__price">Цены на услуги</button>
+                <button class="services__address">Адреса сервисных центров</button>
+                <button class="services__priceSpecial">Специальные цены</button>
+            </div>
+        </div>
+        <div class="description">
+            <div class="description__wrapper">
+                <div class="description__describer">
+                    <article class="description__text">
+                        <p class="description__p1">Мы являемся авторизованным сервисным центром по ремонту техники <span class="description__english" lang="en">Dell</span>. Только у нас вы можете отремонтировать свой ноутбук <span class="description__english" lang="en">Dell</span> с официальной гарантией производителя.</p>
+                        <br>
+                        <p class="description__p2">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        </p>
+                    </article>
+                    <button class="description__button">Читать далее</button>
+                </div>
+                <div class="description__photo">
+                    <img src="img/Picture Copy 320.jpg" alt="CPS green text image" class="description__imageXS">
+                    <img src="img/CPS_md.jpg" alt="CPS logo" class="description__imageMD">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--1.5 start-->
+    <div class="wrapper-header">
+        <h1 class="wrapper-header__title">Ремонт техники различных брендов</h1>
+    </div>
+
+        
+
+
+   
+        <div class="labels">
+            <div class="labels__wrapper">
+                <img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo">
+                <img src="img/samsung.svg" alt="samsung logo" class="labels__samsung">
+                <img src="img/ringo.svg" alt="apple logo" class="labels__apple">
+                <img src="img/viewSonic.svg" alt="view sonic logo" class="labels__view-sonic">
+                <img src="img/bosch.svg" alt="bosch logo" class="labels__bosch">
+                <img src="img/hp.svg" alt="hp logo" class="labels__hp">
+                <img src="img/acer.svg" alt="acer logo" class="labels__acer">
+                <img src="img/sony.svg" alt="sony logo" class="labels__sony">
+                <img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo2">
+                <img src="img/samsung2.svg" alt="samsung logo" class="labels__samsung2">
+                <img src="img/ringo2.svg" alt="apple logo" class="labels__apple2">
+            </div>
+
+
+
+        </div> 
+
+        <!--for mobile swipers-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="img/samsung.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="img/ringo.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="img/viewSonic.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+            <div class="swiper-slide"><img src="img/bosch.svg" alt="bosch logo" class="labels__bosch"></div>
+            <div class="swiper-slide"><img src="img/hp.svg" alt="hp logo" class="labels__hp"></div>
+            <div class="swiper-slide"><img src="img/acer.svg" alt="acer logo" class="labels__acer"></div>
+            <div class="swiper-slide"><img src="img/sony.svg" alt="sony logo" class="labels__sony"></div>
+            <div class="swiper-slide"><img src="img/lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="img/samsung2.svg" alt="samsung logo" class="labels__samsung2"></div>
+            <div class="swiper-slide"><img src="img/ringo2.svg" alt="apple logo" class="labels__apple"></div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        
+
+
+        <button class="btn">
+            <div class="btn__wrapper">
+                <img src="img/expand.svg" alt="expand logo" class="btn__expand">
+                <span class="btn__text">Показать все</span>
+            </div>
+        </button>
+         <!--1.5 end-->
+
+         <!--1.6 start-->
+
+            
+    <div class="wrapper-header">
+        <h1 class="wrapper-header__title">Ремонт различных видов техники</h1>
+    </div>
+
+        
+
+
+   
+        <div class="labels">
+            <div class="labels__wrapper">
+                <img src="img/laptop.svg" alt="lenovo logo" class="labels__lenovo">
+                <img src="img/tablet.svg" alt="samsung logo" class="labels__samsung">
+                <img src="img/pc.svg" alt="apple logo" class="labels__apple">
+                <img src="img/monitor.svg" alt="view sonic logo" class="labels__view-sonic">
+            </div>
+
+
+
+        </div> 
+
+        <!--for mobile swipers-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/laptop.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="img/tablet.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="img/pc.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="img/monitor.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+           
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        
+
+
+        <button class="btn">
+            <div class="btn__wrapper">
+                <img src="img/expand.svg" alt="expand logo" class="btn__expand">
+                <span class="btn__text">Показать все</span>
+            </div>
+        </button>
+        
+
+         <!--1.6 end-->
+
+         <!--1.6 3rd bloc start-->
+
+         
+            
+    <div class="wrapper-header">
+        <h1 class="wrapper-header__title">Цены на услуги</h1>
+    </div>
+
+        
+
+
+   
+        <div class="labels">
+            <div class="labels__wrapper">
+<!--                 <img src="img/laptop.svg" alt="lenovo logo" class="labels__lenovo">
+                <img src="img/tablet.svg" alt="samsung logo" class="labels__samsung">
+                <img src="img/pc.svg" alt="apple logo" class="labels__apple">
+                <img src="img/monitor.svg" alt="view sonic logo" class="labels__view-sonic"> -->
+                <table class="labels__table">
+                    <tr class="labels__table-header">
+                        <th class="labels__cell">Ремонтные услуги</th>
+                        <th class="labels__cell">Цена</th>
+                        <th class="labels__cell">Срок</th>
+                    </tr>
+                    <tr class="">
+                        <td class="labels__cell"> Замена дисплея</td>
+                        <td class="labels__cell">Бесплатно</td>
+                        <td class="labels__cell">30 мин</td>
+                        <td class="labels__cell"><img src="img/order.svg" alt="конпка заказать"></td>
+                    </tr>
+                    <tr class="labels__table-data">
+                        <td class="labels__cell">Замена полифонического динамика</td>
+                        <td class="labels__cell">Бесплатно</td>
+                        <td class="labels__cell">30 мин</td>
+                        <td class="labels__cell"><img src="img/order.svg" alt="конпка заказать"></td>
+                    </tr>
+                    <tr class="labels__table-data">
+                        <td class="labels__cell">Тестирование с выдачей технического заключения</td>
+                        <td class="labels__cell">Бесплатно</td>
+                        <td class="labels__cell">30 мин</td>
+                        <td class="labels__cell"><img src="img/order.svg" alt="конпка заказать"></td>
+                    </tr>
+                    <tr class="labels__table-data">
+                        <td class="labels__cell">Замена программного обеспечения</td>
+                        <td class="labels__cell">Бесплатно</td>
+                        <td class="labels__cell">30 мин</td>
+                        <td class="labels__cell"><img src="img/order.svg" alt="конпка заказать"></td>
+                    </tr>
+            
+                </table>
+
+            </div>
+            <p class="labels__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore magni voluptate consequatur iure nisi corporis consequuntur. Hic, temporibus quod.</p>
+            <p class="labels__offer">Получить коммерческое предложение<img class="labels__line" src="img/Line.svg" alt="arrow logo"></p>
+
+
+        </div> 
+
+        <!--for mobile swipers-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/laptop.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="img/tablet.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="img/pc.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="img/monitor.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+           
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+         <!--1.6 3rd block end-->
 </body>
 </html>
