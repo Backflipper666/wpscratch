@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","mappings":";;;AAAA;IACI,SAAS;AACb,C","sources":["webpack://wpscratch/./src/styles/styles.css"],"sourcesContent":["h1{\n    color:red;\n}"],"names":[],"sourceRoot":""}
