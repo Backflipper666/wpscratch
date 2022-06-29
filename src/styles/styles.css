@@ -7,3 +7,432 @@ h1{
     height: 300px;
   }
   
+  html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+}
+@media (max-width: 767px){
+    .upperMenu__wrapper{
+        margin:0;
+        padding: 0;
+        box-shadow: none;
+        shape-outside: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        background-color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #B8FFEC;
+        align-items: center;
+    }
+    .upperMenu__burger{
+        vertical-align:middle;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .upperMenu__group{
+        vertical-align: middle;
+       
+    }
+    .upperMenu__divider{
+        vertical-align: middle;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .upperMenu__repair{
+        vertical-align: middle;
+        /*border: 1px solid #000;
+        margin-left: 10px;*/
+    }
+    .upperMenu__check{
+        vertical-align: middle;
+    }
+
+    div.upperMenu img{
+        /*-top: 15px;
+        margin-bottom: 15px;
+        */
+        margin: 15px auto;
+
+    }
+    .about__wrapper{
+        display: flex;
+        align-items: center;
+       
+    }
+    .about__highlight{
+        left: 0px;
+        position: absolute;
+    }
+
+    .about__title{
+        margin-left: 15px;
+        position: relative;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .services__wrapper{
+        font-family: 'Dosis', sans-serif;
+        display: flex;
+        flex-wrap: nowrap;
+       
+    }
+    .services__wrapper button{
+        padding: 5px;
+        white-space: nowrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: 	#808080;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 17px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__wrapper button:active, .services__wrapper button:hover{
+        border: 2px solid #B8FFEC;
+    }
+    .services__repairees{
+        margin-left: 25px;
+    }
+
+    .services__letterp{
+        opacity: 0.5;
+    }
+    .services__lettero{
+        opacity: 0.2;
+    }
+
+
+    .description__text{
+        color:#000;
+        font-family: 'Montserrat', sans-serif;
+        margin: 20px 20px;
+    }
+    .description__button{
+        background-color: #f8f8f8;
+        border: #f8f8f8;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    .description__button::before{
+        content: url("img/expand.svg");
+    
+     
+    }
+    .description__imageMD{
+        display: none;
+        visibility: hidden;
+    }
+
+    html:not(div.upperMenu){
+        background-color: #f8f8f8;
+    }
+
+    .upperMenu__call, .upperMenu__chat, .upperMenu__profile, .upperMenu__dividerFirst{
+        display: none;
+        visibility: hidden;
+    }
+    .description__p2{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .upperMenu__wrapper{
+        display: flex;
+        align-items: center;
+        
+    }
+    .upperMenu__wrapper span{
+        padding: 10px;
+        margin-left: -5px;
+        margin-right: -3px;
+    }
+    .upperMenu__wrapper{
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .upperMenu__containerLeft{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .upperMenu__containerRight{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        
+    }
+
+    .upperMenu__burger{
+        padding-left: 15px;
+    }
+    .upperMenu__check{
+        padding-right: 15px;
+    }
+
+
+    .services__address{
+        display: none;
+        visibility: hidden;
+    }
+
+    .about__wrapper{
+        display: flex;
+        align-items: center;
+       
+    }
+    .about__highlight{
+        left: 0px;
+        position: absolute;
+    }
+
+    .about__title{
+        margin-left: 15px;
+        position: relative;
+  
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .services__wrapper{
+        font-family: 'Dosis', sans-serif;
+        display: flex;
+        flex-wrap: nowrap;
+       
+    }
+    .services__wrapper button{
+        padding: 5px;
+        white-space: nowrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: 	#808080;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 17px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__wrapper button:active, .services__wrapper button:hover, .services__wrapper button:focus{
+        border: 2px solid #B8FFEC;
+        outline: none;
+    }
+    .services__repairees{
+        margin-left: 25px;
+        
+    }
+    .services__repairees button:active, .services__repairees button:hover{
+        border: 2px solid #B8FFEC;
+    }
+
+    .description__wrapper{
+        display: flex;
+        align-items:flex-start;
+        margin-left: 20px;
+
+        margin-top: 30px;
+
+    }
+    .description__photo{
+        padding-right: 20px;
+    }
+
+
+    .description__text{
+        color:#000;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    .description__button{
+        background-color: #f8f8f8;
+        border: #f8f8f8;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .description__button:focus{
+        border: 2px solid #B8FFEC;
+        outline: none;
+    }
+    .description__button::before{
+        content: url("img/expand.svg");
+    
+     
+    }
+    .description__imageXS{
+        display: none;
+        visibility: hidden;
+    }
+
+    html:not(div.upperMenu){
+        background-color: #f8f8f8;
+    }
+}
+
+    
+
+@media(min-width:1200px){
+    .upperMenu__wrapper{
+        display: flex;
+        align-items: center;
+        
+    }
+    .upperMenu__wrapper span{
+        padding: 10px;
+        margin-left: -5px;
+        margin-right: -3px;
+    }
+    .upperMenu__wrapper{
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .upperMenu__containerLeft{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .upperMenu__containerRight{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        
+    }
+
+    .upperMenu__burger{
+        padding-left: 15px;
+    }
+    .upperMenu__check{
+        padding-right: 15px;
+    }
+
+
+    .services__address{
+        display: none;
+        visibility: hidden;
+    }
+
+    .about__wrapper{
+        display: flex;
+        align-items: center;
+       
+    }
+    .about__highlight{
+        left: 0px;
+        position: absolute; 
+    }
+
+    .about__title{
+        margin-left: 15px;
+        position: relative;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .services__wrapper{
+        font-family: 'Dosis', sans-serif;
+        display: flex;
+        flex-wrap: nowrap;
+       
+    }
+    .services__wrapper button{
+        padding: 5px;
+        white-space: nowrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: 	#808080;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 17px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__wrapper button:active, .services__wrapper button:hover, .services__wrapper button:focus{
+        border: 2px solid #B8FFEC;
+        outline: none;
+    }
+    .services__repairees{
+        margin-left: 25px;
+        
+    }
+    .services__repairees button:active, .services__repairees button:hover{
+        border: 2px solid #B8FFEC;
+    }
+
+    .description__wrapper{
+        display: flex;
+        align-items:flex-start;
+        margin-left: 20px;
+
+        margin-top: 30px;
+
+    }
+    .description__photo{
+        padding-right: 20px;
+    }
+
+
+    .description__text{
+        color:#000;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    .description__button{
+        background-color: #f8f8f8;
+        border: #f8f8f8;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .description__button:focus{
+        border: 2px solid #B8FFEC;
+        outline: none;
+    }
+    .description__button::before{
+        content: url("img/expand.svg");
+    
+     
+    }
+    .description__imageXS{
+        display: none;
+        visibility: hidden;
+    }
+
+    html:not(div.upperMenu){
+        background-color: #f8f8f8;
+    }
+
+}
