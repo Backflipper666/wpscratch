@@ -7,7 +7,13 @@ if (window.matchMedia("screen and (min-width: 1200px)").matches) {
     console.log("desktop imported hallelujaj");
   });
 }
-console.log("It works");
+if (window.matchMedia("screen and (max-width: 767px)").matches) {
+  import("./styles/mobile.css").then(() => {
+    console.log("mobile imported hallelujaj");
+  });
+}
+
+console.log("overall  js works");
 
 /* const swiper = new Swiper(".swiper", {
   // Optional parameters
