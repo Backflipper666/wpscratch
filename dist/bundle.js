@@ -24110,6 +24110,7 @@ console.log("It works");
 //$(".logo").addClass("myClass yourClass");
 
 //1.4
+jquery__WEBPACK_IMPORTED_MODULE_0__(".wrapper1-4").addClass("lmfao");
 {
   let burger = document.querySelector(".upperMenu__burger");
 

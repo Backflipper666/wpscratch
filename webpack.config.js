@@ -103,7 +103,7 @@ module.exports = {
           from: path.resolve(__dirname, "src/img"),
           to: path.resolve(__dirname, "dist/img"),
         },
-        {
+        /*         {
           from: path.resolve(__dirname, "src/desktop.css"),
           to: path.resolve(__dirname, "dist"),
         },
@@ -114,7 +114,7 @@ module.exports = {
         {
           from: path.resolve(__dirname, "src/mobile.css"),
           to: path.resolve(__dirname, "dist"),
-        },
+        }, */
       ],
     }),
   ],

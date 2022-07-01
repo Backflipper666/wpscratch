@@ -29,6 +29,7 @@ console.log("It works");
 //$(".logo").addClass("myClass yourClass");
 
 //1.4
+$(".wrapper1-4").addClass("lmfao");
 {
   let burger = document.querySelector(".upperMenu__burger");
 
