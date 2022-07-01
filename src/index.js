@@ -4,7 +4,12 @@ import "./styles/style1.5.css";
 import "./styles/style1.4.css";
 
 //import "./styles/styles.css";
-import Swiper from "swiper";
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from "swiper";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 if (window.matchMedia("screen and (min-width: 1200px)").matches) {
   import("./styles/desktop.css").then(() => {
@@ -55,6 +60,7 @@ console.log("overall  js works");
 //1.5
 {
   const swiper = new Swiper(".swiper", {
+    modules: [Navigation, Pagination],
     // Optional parameters
 
     // If we need pagination
