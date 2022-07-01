@@ -2,6 +2,11 @@ import * as $ from "jquery";
 import "./styles/styles.css";
 import Swiper from "swiper";
 
+if (window.matchMedia("screen and (min-width: 1200px)").matches) {
+  import("./styles/desktop.css").then(() => {
+    console.log("desktop imported hallelujaj");
+  });
+}
 console.log("It works");
 
 /* const swiper = new Swiper(".swiper", {

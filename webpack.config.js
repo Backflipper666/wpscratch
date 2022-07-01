@@ -72,6 +72,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
       title: "Webpack 4 Starter",
@@ -117,7 +118,5 @@ module.exports = {
         }, */
       ],
     }),
-
-    new CleanWebpackPlugin(),
   ],
 };
