@@ -12,6 +12,15 @@ if (window.matchMedia("screen and (max-width: 767px)").matches) {
     console.log("mobile imported hallelujaj");
   });
 }
+if (
+  window.matchMedia("screen and (min-width: 767px) and (max-width:1199px)")
+    .matches
+) {
+  import("./styles/tablets.css").then(() => {
+    console.log("tablets imported hallelujaj");
+  });
+}
+//<link rel="stylesheet" media="screen and (min-width: 1200px)" href="scss/desktop.css">
 
 console.log("overall  js works");
 

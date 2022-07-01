@@ -24086,7 +24086,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d529b950027089ae7377")
+/******/ 		__webpack_require__.h = () => ("9bdeaacd3d7934cda386")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -24240,7 +24240,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"src_styles_desktop_css":1};
+/******/ 			var cssChunks = {"src_styles_desktop_css":1,"src_styles_mobile_css":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -24367,7 +24367,13 @@ if (window.matchMedia("screen and (min-width: 1200px)").matches) {
     console.log("desktop imported hallelujaj");
   });
 }
-console.log("It works");
+if (window.matchMedia("screen and (max-width: 767px)").matches) {
+  __webpack_require__.e(/*! import() */ "src_styles_mobile_css").then(__webpack_require__.bind(__webpack_require__, /*! ./styles/mobile.css */ "./src/styles/mobile.css")).then(() => {
+    console.log("mobile imported hallelujaj");
+  });
+}
+
+console.log("overall  js works");
 
 /* const swiper = new Swiper(".swiper", {
   // Optional parameters
