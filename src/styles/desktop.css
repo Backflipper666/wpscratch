@@ -83,3 +83,7 @@
 
 }
 
+.upperMenu1-4__burger {
+    display: none;
+    visibility: hidden;
+}
