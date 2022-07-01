@@ -1,5 +1,6 @@
 import * as $ from "jquery";
-import "./styles/styles.css";
+import "./styles/style1.3.css";
+//import "./styles/styles.css";
 import Swiper from "swiper";
 
 if (window.matchMedia("screen and (min-width: 1200px)").matches) {
