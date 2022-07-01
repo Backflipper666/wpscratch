@@ -117,5 +117,7 @@ module.exports = {
         }, */
       ],
     }),
+
+    new CleanWebpackPlugin(),
   ],
 };
