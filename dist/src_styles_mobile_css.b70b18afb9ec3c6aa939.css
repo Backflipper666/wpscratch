@@ -1,0 +1,17 @@
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/mobile.css ***!
+  \*************************************************************************/
+.btn{
+    display: none;
+    visibility: hidden;
+}
+.labels{
+    display: none;
+    visibility: hidden;
+}
+.swiper-wrapper{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=src_styles_mobile_css.b70b18afb9ec3c6aa939.css.map*/

@@ -1,3 +1,6 @@
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tablets.css ***!
+  \**************************************************************************/
 .btn__expand{
     transform: rotate(180deg);
  }
@@ -143,7 +146,7 @@
      outline: none;
  }
  .description__button::before{
-     content: url("../img/expand.svg");
+     content: url(cc6191d210007e8c6a73.svg);
  
   
  }
@@ -155,3 +158,5 @@
  html:not(div.upperMenu){
      background-color: #f8f8f8;
  }
+
+/*# sourceMappingURL=src_styles_tablets_css.b70b18afb9ec3c6aa939.css.map*/

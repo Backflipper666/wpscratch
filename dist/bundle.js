@@ -24086,7 +24086,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("9bdeaacd3d7934cda386")
+/******/ 		__webpack_require__.h = () => ("b70b18afb9ec3c6aa939")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -24240,7 +24240,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"src_styles_desktop_css":1,"src_styles_mobile_css":1};
+/******/ 			var cssChunks = {"src_styles_desktop_css":1,"src_styles_mobile_css":1,"src_styles_tablets_css":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -24372,6 +24372,15 @@ if (window.matchMedia("screen and (max-width: 767px)").matches) {
     console.log("mobile imported hallelujaj");
   });
 }
+if (
+  window.matchMedia("screen and (min-width: 767px) and (max-width:1199px)")
+    .matches
+) {
+  __webpack_require__.e(/*! import() */ "src_styles_tablets_css").then(__webpack_require__.bind(__webpack_require__, /*! ./styles/tablets.css */ "./src/styles/tablets.css")).then(() => {
+    console.log("tablets imported hallelujaj");
+  });
+}
+//<link rel="stylesheet" media="screen and (min-width: 1200px)" href="scss/desktop.css">
 
 console.log("overall  js works");
 

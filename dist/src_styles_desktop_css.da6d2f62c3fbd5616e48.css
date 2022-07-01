@@ -1,0 +1,92 @@
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/desktop.css ***!
+  \**************************************************************************/
+
+.wrapper{
+    background-color: rgb(37, 29, 29);
+}
+/*
+.btn__expand{
+    transform: rotate(180deg);
+}*/
+
+.swiper{
+    display: none;
+    visibility: hidden;
+}
+.labels__lenovo2, .labels__samsung2, .labels__apple2{
+   display: none;
+   visibility: hidden;
+   
+}
+
+/*block  1.6 sidebar*/
+.wrapper1-4{
+    visibility: visible;
+    display: block;
+    position: fixed;
+    box-shadow: none;
+}
+.upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn{
+    margin-left: 320px;
+}
+
+.upperMenu__wrapper{
+    visibility: hidden;
+    display: none;
+}
+
+.labels__table{
+    border-collapse: collapse;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.labels__table-header {
+    padding: 30px 20px;
+}
+.labels__cell{
+    padding: 20px 40px;
+    
+}
+
+.labels__table-data{
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #7e7e82;
+}
+
+.labels__table-header{
+    font-size: 16px;
+    font-family: "TT Lakes",serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color:#7e7e82;
+    font-weight: 300;
+/*     @font-face {font-family: "TT Lakes"; src: url("/TT-Lakes-Font/TT Lakes Medium.otf");}  */
+  
+    
+}
+
+.labels__disclaimer{
+    margin-left: 20px;
+    font-size: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+.labels__offer{
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.labels__line{
+    margin-left: 15px;
+   
+
+}
+
+
+
+/*# sourceMappingURL=src_styles_desktop_css.da6d2f62c3fbd5616e48.css.map*/
