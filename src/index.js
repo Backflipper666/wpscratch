@@ -1,5 +1,6 @@
 import * as $ from "jquery";
 import "./styles/style1.3.css";
+import "./styles/style1.5.css";
 import "./styles/style1.4.css";
 
 //import "./styles/styles.css";
