@@ -211,3 +211,16 @@
     display: none;
     visibility: hidden;
 }
+
+.ftr__wrapper{
+    display: flex;
+    column-gap: 30px;
+    color:#7e7e82;
+    margin: 30px;
+}
+.ftr__nooffer{
+    text-align: right;
+}
+.ftr__policy {
+    text-align: center;
+}

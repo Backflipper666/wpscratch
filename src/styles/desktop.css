@@ -24,7 +24,7 @@
     position: fixed;
     box-shadow: none;
 }
-.upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn{
+.upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr__wrapper,  .ftr{
     margin-left: 320px;
 }
 
@@ -90,4 +90,24 @@
 .labels__disclaimer__mobile, .labels__offer__mobile{
     display: none;
     visibility: hidden;
+}
+
+.ftr__wrapper{
+    padding-left: 20px;
+   
+}
+
+.ftr__wrapper{
+    display: flex;
+    column-gap: 30px;
+    color:#7e7e82;
+    margin: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.ftr__nooffer{
+    text-align: right;
+}
+.ftr__policy {
+    text-align: center;
 }
