@@ -10,3 +10,27 @@
     margin-left: 20px;
     margin-bottom: 40px;
 }
+
+.swiper-slide-wrapper{
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    max-width:250px;
+    position: relative;
+    
+}
+.offer{
+    margin: 5px 15px;
+    background-color: #539383;
+}
+.offer__header{
+    color:grey;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    
+}
+.offer__svg{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
