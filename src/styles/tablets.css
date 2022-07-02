@@ -207,3 +207,7 @@
 
 }
 /*copied from desktop end*/
+.labels__disclaimer__mobile, .labels__offer__mobile{
+    display: none;
+    visibility: hidden;
+}

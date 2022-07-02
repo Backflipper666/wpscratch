@@ -35,6 +35,24 @@
     right: 15px;
 }
 
+.labels__disclaimer__mobile{
+    margin-left: 20px;
+    font-size: 15px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.labels__offer__mobile{
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.labels__line{
+    margin-left: 15px;
+   
+
+}
+
 .ftr__wrapper{
     margin: 20px;
     margin-top: 30px;
@@ -45,3 +63,4 @@
     margin-bottom: 15px;
     text-align: center;
 }
+

@@ -87,3 +87,7 @@
     display: none;
     visibility: hidden;
 }
+.labels__disclaimer__mobile, .labels__offer__mobile{
+    display: none;
+    visibility: hidden;
+}
