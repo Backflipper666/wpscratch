@@ -34,3 +34,14 @@
     bottom: 5px;
     right: 15px;
 }
+
+.ftr__wrapper{
+    margin: 20px;
+    margin-top: 30px;
+    
+}
+.ftr__info{
+    color:#7e7e82;
+    margin-bottom: 15px;
+    text-align: center;
+}
