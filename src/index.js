@@ -29,35 +29,9 @@ if (
     console.log("tablets imported hallelujaj");
   });
 }
-//<link rel="stylesheet" media="screen and (min-width: 1200px)" href="scss/desktop.css">
 
 console.log("overall  js works");
 
-/* const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-}) */
-
-//$(".logo").addClass("myClass yourClass");
-
-//1.5
 {
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination],
