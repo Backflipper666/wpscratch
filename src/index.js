@@ -190,7 +190,8 @@ $(".wrapper1-4").addClass("lmfao");
     chat.setAttribute("style", "border: none;");
   });
 
-  if (window.matchMedia("screen and (mix-width: 1200px)").matches) {
+  if (window.matchMedia("screen and (min-width: 1200px)").matches) {
+    console.log("lolito");
     chat.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:visible; display:block;");
       for (let element of rest) {
