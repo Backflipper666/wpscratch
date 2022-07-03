@@ -177,9 +177,6 @@ $(".wrapper1-4").addClass("lmfao");
   let rest = document.querySelectorAll(
     ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile, .wrapper1-4"
   );
-  let restWithoutSidebar = document.querySelectorAll(
-    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
-  );
 
   let sidebar = document.querySelector(".wrapper1-4");
 
@@ -220,7 +217,10 @@ $(".wrapper1-4").addClass("lmfao");
       feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
       sidebar.classList.remove("ghostSidebar");
     });
-    restWithoutSidebar.classList.add("ghost");
+    //restWithoutSidebar.classList.add("ghost");
+    /*     for (let element of restWithoutSidebar) {
+      element.classList.add("ghost");
+    } */
   }
 }
 //feedback call button
@@ -274,8 +274,38 @@ $(".wrapper1-4").addClass("lmfao");
     }
     //feedback__close
 
-    //feedback for mobile and tablets
-    if (window.matchMedia("screen and (max-width:1199px)").matches) {
+    //feedback for tablets
+    else if (
+      window.matchMedia("screen and (min-width: 767px) and (max-width:1199px)")
+        .matches
+    ) {
+      //"screen and (min-width: 767px) and (max-width:1199px)"
+      call.addEventListener("click", () => {
+        feedbackBlock.setAttribute(
+          "style",
+          "visibility:visible; display:block;"
+        );
+        for (let element of rest) {
+          element.classList.add("ghost");
+        }
+        title.textContent = "Заказать звонок";
+        for (let form of formFields) {
+          form.setAttribute("style", "display:none; visibility:hidden;");
+        }
+      });
+      closeBtn.addEventListener("click", () => {
+        feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
+        for (let element of rest) {
+          element.classList.remove("ghost");
+        }
+        title.textContent = "Обратная связь";
+        for (let form of formFields) {
+          form.setAttribute("style", "display:block; visibility:visible;");
+        }
+      });
+    }
+    //for mobile max-width: 767px
+    else if (window.matchMedia("screen and (max-width:767px)").matches) {
       call.addEventListener("click", () => {
         feedbackBlock.setAttribute(
           "style",
