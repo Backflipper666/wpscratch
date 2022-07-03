@@ -167,7 +167,7 @@ $(".wrapper1-4").addClass("lmfao");
   let block4 = document.querySelector(".wrapper1-4");
 
   let rest = document.querySelectorAll(
-    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn"
+    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
   );
 
   let body = document.body;
@@ -179,8 +179,8 @@ $(".wrapper1-4").addClass("lmfao");
         "style",
         "visibility:visible; display:block; height:100vh;"
       );
-      for (element of rest) {
-        element.setAttribute("style", "visibility:hidden; ");
+      for (let element of rest) {
+        element.setAttribute("style", "visibility:hidden;");
       }
     });
   }
@@ -196,7 +196,7 @@ $(".wrapper1-4").addClass("lmfao");
 
   closeBtn.addEventListener("click", () => {
     block4.setAttribute("style", "visibility:hidden; display:none;");
-    for (element of rest) {
+    for (let element of rest) {
       element.setAttribute("style", "visibility:visible; ");
     }
   });
