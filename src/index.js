@@ -169,6 +169,7 @@ $(".wrapper1-4").addClass("lmfao");
     block4.setAttribute("style", "visibility:hidden; display:none;");
     for (let element of rest) {
       element.classList.remove("ghost");
+      element.classList.remove("ghostMain");
     }
   });
 }
@@ -176,6 +177,9 @@ $(".wrapper1-4").addClass("lmfao");
 {
   let rest = document.querySelectorAll(
     ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile, .wrapper1-4"
+  );
+  let mainContent = document.querySelectorAll(
+    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
   );
 
   let sidebar = document.querySelector(".wrapper1-4");
@@ -208,7 +212,7 @@ $(".wrapper1-4").addClass("lmfao");
   //feedback__close
 
   //feedback for mobile and tablets
-  if (window.matchMedia("screen and (max-width:1199px)").matches) {
+  else if (window.matchMedia("screen and (max-width:1199px)").matches) {
     chat.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:visible; display:block;");
       sidebar.classList.add("ghostSidebar");
@@ -216,6 +220,10 @@ $(".wrapper1-4").addClass("lmfao");
     closeFeed.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
       sidebar.classList.remove("ghostSidebar");
+      for (let elem of mainContent) {
+        console.log(elem);
+        elem.classList.add("ghostMain");
+      }
     });
     //restWithoutSidebar.classList.add("ghost");
     /*     for (let element of restWithoutSidebar) {

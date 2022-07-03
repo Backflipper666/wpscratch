@@ -157,6 +157,10 @@ div.upperMenu1-4 img{
     display: none;
     visibility: hidden;
 }
+.ghostMain{
+    display: none;
+    visibility: hidden;
+}
 /*feedback*/
 .feedback__container{
     display: none;
