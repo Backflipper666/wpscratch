@@ -67,6 +67,7 @@
 /*feedback*/
 .feedback__container{
     width: 320px;
+    left:0;
 }
 
 .feedback__close{

@@ -164,8 +164,7 @@ div.upperMenu1-4 img{
     height: 100vh;
     position: fixed;
     top:0;
-    right:0;
-    box-shadow: -5px 0 5px rgb(0, 0, 0, .2);
+
 }
 .feedback__submit{
     margin: 0;

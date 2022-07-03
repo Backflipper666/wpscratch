@@ -116,6 +116,8 @@
 /*feedback*/
 .feedback__container{
     width: 360px;
+    right:0;
+    box-shadow: -5px 0 5px rgb(0, 0, 0, .2);
 }
 
 .feedback__close{

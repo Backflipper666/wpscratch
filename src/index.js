@@ -182,6 +182,7 @@ $(".wrapper1-4").addClass("lmfao");
   );
   let chat = document.querySelector(".bottom-menu_chat");
   let feedbackBlock = document.querySelector(".feedback__container");
+  let closeBtn = document.querySelector(".feedback__close");
 
   chat.addEventListener("mouseover", () => {
     chat.setAttribute("style", "border: 2px solid #B8FFEC;");
@@ -197,14 +198,28 @@ $(".wrapper1-4").addClass("lmfao");
         element.classList.add("half-ghost");
       }
     });
+    closeBtn.addEventListener("click", () => {
+      feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
+      for (let element of rest) {
+        element.classList.remove("half-ghost");
+      }
+    });
   }
   //feedback__close
-  let closeBtn = document.querySelector(".feedback__close");
 
-  closeBtn.addEventListener("click", () => {
-    feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
-    for (let element of rest) {
-      element.classList.remove("half-ghost");
-    }
-  });
+  //feedback for mobile and tablets
+  if (window.matchMedia("screen and (max-width:1199px)").matches) {
+    chat.addEventListener("click", () => {
+      feedbackBlock.setAttribute("style", "visibility:visible; display:block;");
+      for (let element of rest) {
+        element.classList.add("ghost");
+      }
+    });
+    closeBtn.addEventListener("click", () => {
+      feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
+      for (let element of rest) {
+        element.classList.remove("ghost");
+      }
+    });
+  }
 }
