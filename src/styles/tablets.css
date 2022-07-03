@@ -224,3 +224,14 @@
 .ftr__policy {
     text-align: center;
 }
+
+/*feedback*/
+.feedback__container{
+    width: 320px;
+}
+
+.feedback__close{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}

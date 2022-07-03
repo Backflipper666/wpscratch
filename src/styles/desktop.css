@@ -112,3 +112,14 @@
 .ftr__policy {
     text-align: center;
 }
+
+/*feedback*/
+.feedback__container{
+    width: 360px;
+}
+
+.feedback__close{
+    position: absolute;
+    left: -75px;
+    top: 10px;
+}

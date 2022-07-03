@@ -178,7 +178,7 @@ $(".wrapper1-4").addClass("lmfao");
 //feedback
 {
   let rest = document.querySelectorAll(
-    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
+    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile, .wrapper1-4"
   );
   let chat = document.querySelector(".bottom-menu_chat");
   let feedbackBlock = document.querySelector(".feedback__container");
@@ -191,11 +191,10 @@ $(".wrapper1-4").addClass("lmfao");
   });
 
   if (window.matchMedia("screen and (min-width: 1200px)").matches) {
-    console.log("lolito");
     chat.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:visible; display:block;");
       for (let element of rest) {
-        element.classList.add("ghost");
+        element.classList.add("half-ghost");
       }
     });
   }
@@ -205,7 +204,7 @@ $(".wrapper1-4").addClass("lmfao");
   closeBtn.addEventListener("click", () => {
     feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
     for (let element of rest) {
-      element.classList.remove("ghost");
+      element.classList.remove("half-ghost");
     }
   });
 }

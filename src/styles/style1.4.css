@@ -162,9 +162,10 @@ div.upperMenu1-4 img{
     border-color: 2px solid blue;
     background-color: #fff;
     height: 100vh;
-    position: absolute;
+    position: fixed;
+    top:0;
     right:0;
-    width: 360px;
+    box-shadow: -5px 0 5px rgb(0, 0, 0, .2);
 }
 .feedback__submit{
     margin: 0;
@@ -204,14 +205,14 @@ div.upperMenu1-4 img{
 .feedback__submit{
     margin-left: 180px;
 }
-.feedback__close{
-    position: absolute;
-    left: -75px;
-    top: 10px;
-}
+
 .feedback__close:hover{
     border: 1px solid #41F6D7;
 }
 .feedback__title{
     font-weight: bold;
+}
+
+.half-ghost{
+    opacity: .1;
 }
