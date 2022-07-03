@@ -100,7 +100,7 @@ console.log("overall  js works");
         samsung2.setAttribute("style", "visibility:hidden; display:none;");
         viewSonic.setAttribute("style", "visibility:hidden; display:none;");
         sony.setAttribute("style", "visibility:hidden; display:none;");
-        expand.setAttribute("style", "transform:rotate(180deg);");
+        expand.setAttribute("style", "transform:rotate(360deg);");
         text.textContent = "Показать все";
       } else {
         lenovo2.setAttribute(
