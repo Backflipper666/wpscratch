@@ -175,3 +175,36 @@ $(".wrapper1-4").addClass("lmfao");
     }
   });
 }
+//feedback
+{
+  let rest = document.querySelectorAll(
+    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
+  );
+  let chat = document.querySelector(".bottom-menu_chat");
+  let feedbackBlock = document.querySelector(".feedback__container");
+
+  chat.addEventListener("mouseover", () => {
+    chat.setAttribute("style", "border: 2px solid #B8FFEC;");
+  });
+  chat.addEventListener("mouseleave", () => {
+    chat.setAttribute("style", "border: none;");
+  });
+
+  if (window.matchMedia("screen and (mix-width: 1200px)").matches) {
+    chat.addEventListener("click", () => {
+      feedbackBlock.setAttribute("style", "visibility:visible; display:block;");
+      for (let element of rest) {
+        element.classList.add("ghost");
+      }
+    });
+  }
+  //feedback__close
+  let closeBtn = document.querySelector(".feedback__close");
+
+  closeBtn.addEventListener("click", () => {
+    feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
+    for (let element of rest) {
+      element.classList.remove("ghost");
+    }
+  });
+}
