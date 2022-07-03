@@ -144,9 +144,6 @@ $(".wrapper1-4").addClass("lmfao");
     ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
   );
 
-  let body = document.body;
-  let html = document.documentElement;
-
   if ($(window).width() < 1199) {
     burger.addEventListener("click", () => {
       block4.setAttribute(
@@ -180,9 +177,15 @@ $(".wrapper1-4").addClass("lmfao");
   let rest = document.querySelectorAll(
     ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile, .wrapper1-4"
   );
+  let restWithoutSidebar = document.querySelectorAll(
+    ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
+  );
+
+  let sidebar = document.querySelector(".wrapper1-4");
+
   let chat = document.querySelector(".bottom-menu_chat");
   let feedbackBlock = document.querySelector(".feedback__container");
-  let closeBtn = document.querySelector(".feedback__close");
+  let closeFeed = document.querySelector(".feedback__close");
 
   chat.addEventListener("mouseover", () => {
     chat.setAttribute("style", "border: 2px solid #B8FFEC;");
@@ -198,7 +201,7 @@ $(".wrapper1-4").addClass("lmfao");
         element.classList.add("half-ghost");
       }
     });
-    closeBtn.addEventListener("click", () => {
+    closeFeed.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
       for (let element of rest) {
         element.classList.remove("half-ghost");
@@ -211,15 +214,91 @@ $(".wrapper1-4").addClass("lmfao");
   if (window.matchMedia("screen and (max-width:1199px)").matches) {
     chat.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:visible; display:block;");
-      for (let element of rest) {
-        element.classList.add("ghost");
-      }
+      sidebar.classList.add("ghostSidebar");
     });
-    closeBtn.addEventListener("click", () => {
+    closeFeed.addEventListener("click", () => {
       feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
-      for (let element of rest) {
-        element.classList.remove("ghost");
-      }
+      sidebar.classList.remove("ghostSidebar");
     });
+    restWithoutSidebar.classList.add("ghost");
+  }
+}
+//feedback call button
+{
+  {
+    let rest = document.querySelectorAll(
+      ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile, .wrapper1-4"
+    );
+    let restWithoutSidebar = document.querySelectorAll(
+      ".upperMenu, .about, .services, .description, .wrapper-header, .labels, .swiper, .btn, .ftr, .labels__disclaimer__mobile, .labels__offer__mobile"
+    );
+    let call = document.querySelector(".bottom-menu__call");
+    let feedbackBlock = document.querySelector(".feedback__container");
+    let closeBtn = document.querySelector(".feedback__close");
+    let title = document.querySelector(".feedback__title");
+    let formFields = document.querySelectorAll(
+      ".feedback__name, .feedback__mail, .feedback__message"
+    );
+
+    call.addEventListener("mouseover", () => {
+      call.setAttribute("style", "border: 2px solid #B8FFEC;");
+    });
+    call.addEventListener("mouseleave", () => {
+      call.setAttribute("style", "border: none;");
+    });
+
+    if (window.matchMedia("screen and (min-width: 1200px)").matches) {
+      call.addEventListener("click", () => {
+        feedbackBlock.setAttribute(
+          "style",
+          "visibility:visible; display:block;"
+        );
+        for (let element of rest) {
+          element.classList.add("half-ghost");
+        }
+        title.textContent = "Заказать звонок";
+        for (let form of formFields) {
+          form.setAttribute("style", "display:none; visibility:hidden;");
+        }
+      });
+      closeBtn.addEventListener("click", () => {
+        feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
+        for (let element of rest) {
+          element.classList.remove("half-ghost");
+        }
+        title.textContent = "Обратная связь";
+        for (let form of formFields) {
+          form.setAttribute("style", "display:block; visibility:visible;");
+        }
+      });
+    }
+    //feedback__close
+
+    //feedback for mobile and tablets
+    if (window.matchMedia("screen and (max-width:1199px)").matches) {
+      call.addEventListener("click", () => {
+        feedbackBlock.setAttribute(
+          "style",
+          "visibility:visible; display:block;"
+        );
+        for (let element of rest) {
+          element.classList.add("ghost");
+        }
+        title.textContent = "Заказать звонок";
+        for (let form of formFields) {
+          form.setAttribute("style", "display:none; visibility:hidden;");
+        }
+      });
+      closeBtn.addEventListener("click", () => {
+        feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
+        for (let element of rest) {
+          element.classList.remove("ghost");
+        }
+        title.textContent = "Обратная связь";
+        for (let form of formFields) {
+          form.setAttribute("style", "display:block; visibility:visible;");
+        }
+      });
+    }
   }
 }
