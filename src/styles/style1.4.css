@@ -147,3 +147,8 @@ div.upperMenu1-4 img{
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
+.ghost{
+    display: none;
+    visibility: hidden;
+}

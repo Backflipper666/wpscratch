@@ -180,7 +180,7 @@ $(".wrapper1-4").addClass("lmfao");
         "visibility:visible; display:block; height:100vh;"
       );
       for (let element of rest) {
-        element.setAttribute("style", "visibility:hidden;");
+        element.classList.add("ghost");
       }
     });
   }
@@ -197,7 +197,7 @@ $(".wrapper1-4").addClass("lmfao");
   closeBtn.addEventListener("click", () => {
     block4.setAttribute("style", "visibility:hidden; display:none;");
     for (let element of rest) {
-      element.setAttribute("style", "visibility:visible; ");
+      element.classList.remove("ghost");
     }
   });
 }
