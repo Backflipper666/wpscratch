@@ -153,6 +153,38 @@ $(".wrapper1-4").addClass("lmfao");
       for (let element of rest) {
         element.classList.add("ghost");
       }
+      /*close when clicked on blurry side*/
+      if (
+        window.matchMedia(
+          "screen and (min-width: 767px) and (max-width:1199px)"
+        ).matches
+      ) {
+        if ($(block4).is(":visible")) {
+          let profile = document.querySelector(".bottom-menu__profile");
+          let imgHeight = $(window).height();
+          let imgWidth = $(window).width();
+          let block4Height = block4.offsetWidth;
+
+          let img = document.createElement("img");
+          img.src = "img/shrek.jpg";
+
+          img.setAttribute(
+            "style",
+            `position:absolute; top:0; right:0; opacity:0;`
+          );
+          img.height = imgHeight;
+          img.width = imgWidth - block4Height;
+          document.body.appendChild(img);
+          img.addEventListener("click", () => {
+            block4.setAttribute("style", "visibility:hidden; display:none;");
+            for (let element of rest) {
+              element.classList.remove("ghost");
+              element.classList.remove("ghostMain");
+            }
+            document.body.removeChild(img);
+          });
+        }
+      }
     });
   }
 
@@ -221,7 +253,6 @@ $(".wrapper1-4").addClass("lmfao");
       feedbackBlock.setAttribute("style", "visibility:hidden; display:none;");
       sidebar.classList.remove("ghostSidebar");
       for (let elem of mainContent) {
-        console.log(elem);
         elem.classList.add("ghostMain");
       }
     });
